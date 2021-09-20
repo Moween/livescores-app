@@ -29,9 +29,9 @@ const Header = () => {
           className={brandLogo} 
           variant="h4" component="h1" 
         >
-          Live
+          Bet
           <Typography variant="h4" component="span" color="secondary">
-          Score
+          Ninja
           </Typography>
         </Typography>
       </Container>
