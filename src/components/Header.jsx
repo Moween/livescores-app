@@ -23,7 +23,7 @@ const Header = () => {
   const { brandLogo, logoContainer, soccerIcon } = useStyles();
   return (
     <header>
-      <Container className={logoContainer}>
+      <Container className={logoContainer} maxWidth="xl">
         <SportsSoccerIcon className={soccerIcon} />
         <Typography 
           className={brandLogo} 
