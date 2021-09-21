@@ -5,8 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 const useStyles = makeStyles(theme => ({
   table: {
     height: '80%',
-    [theme.breakpoints.up('lg')]: {
-    },
     marginTop: 30,
   }
 }));

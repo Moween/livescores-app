@@ -6,11 +6,11 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 const theme = createTheme({
   breakpoints: {
     values:{
-      'xs': 0,
-      'sm': 375,
-      'md': 768,
-      'lg': 960,
-      'xl': 1140,
+      xs: 0,
+      sm: 375,
+      md: 768,
+      lg: 1024,
+      xl: 1140,
     },
     unit: 'px'
   },

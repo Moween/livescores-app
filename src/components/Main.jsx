@@ -11,8 +11,7 @@ const useStyles = makeStyles(theme => ({
   container: {
     height: '100%',
     [theme.breakpoints.down('sm')]: {
-      width: '80%',
-      margin: '0 auto 0 auto'
+      width: '100%',
     },
   }
 }))
@@ -28,11 +27,10 @@ const Main = () => {
       }
     )(apiUrl);
   }, []);
-  console.log('State => ', soccerData);
   return ( 
     <main>
       <ToastContainer />
-      <Container maxWidth="xl" className={container}>
+      <Container maxWidth="lg" className={container}>
         {soccerData && <Table soccerData={soccerData} />}
       </Container>
     </main>
