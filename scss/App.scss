@@ -1,6 +1,27 @@
 @import './reset';
 
+* {
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   background-color: black;
+}
+
+main {
+  height: 100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  td, th {
+    text-align: center;
+    padding: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 }

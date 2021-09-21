@@ -48,8 +48,32 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   width: 100%;
   background-color: black;
+}
+
+main {
+  height: 100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  text-align: center;
+  padding: 10px;
+}
+
+table tr:nth-child(even) {
+  background-color: #dddddd;
 }
 /*# sourceMappingURL=App.css.map */
