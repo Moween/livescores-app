@@ -8,27 +8,27 @@ const Table = ({ soccerData }) => {
     <table className={table}>
       <thead>
         <tr>
-          {/* <th>League</th>
+          <th>League</th>
           <th>HomeTeam</th>
           <th></th>
           <th>AwayTeam</th>
           <th>OverUnderOdd</th>
           <th>Tip</th>
-          <th>Score</th> */}
+          <th>Score</th>
         </tr>
       </thead>
       <tbody>
-        {soccerData.map((data) => {
+        {soccerData.map(({ fid, date, league, homeTeam, awayTeam, overUnderOdd, tip, score}) => {
           return (
             <TableData
-              key={data.fid}
-              date={data.date}
-              league={data.league}
-              homeTeam={data.homeTeam}
-              awayTeam={data.awayTeam}
-              overUnderOdd={data.overUnderOdd}
-              tip={data.tip}
-              score={data.score}
+              key={fid}
+              date={date}
+              league={league}
+              homeTeam={homeTeam}
+              awayTeam={awayTeam}
+              overUnderOdd={overUnderOdd}
+              tip={tip}
+              score={score}
             />
           );
         })}
