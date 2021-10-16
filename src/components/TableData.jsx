@@ -5,7 +5,15 @@ import { useStyles } from '../utils/styles';
 
 
 const TableData = (props) => {
-  const { date, league, homeTeam, awayTeam, overUnderOdd, tip, score } = props;
+  const {
+    date,
+    league,
+    homeTeam,
+    awayTeam,
+    overUnderOdd,
+    tip,
+    score
+  } = props;
   const { team, time } = useStyles();
   return (
     <tr>
