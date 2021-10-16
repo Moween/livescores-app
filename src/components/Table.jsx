@@ -1,14 +1,6 @@
 import React from 'react';
 import TableData from './TableData';
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles(theme => ({
-  table: {
-    height: '80%',
-    marginTop: 30,
-  }
-}));
-
+import { useStyles } from '../utils/styles';
 
 const Table = ({ soccerData }) => {
   const { table } = useStyles();
