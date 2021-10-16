@@ -1,17 +1,8 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import getTime from '../utils/getTime';
-import { makeStyles } from '@material-ui/styles';
+import { useStyles } from '../utils/styles';
 
-
-const useStyles = makeStyles(theme => ({
-  team: {
-    textAlign: 'right',
-  },
-  time: {
-    padding: 'auto, 0',
-  },
-}));
 
 const TableData = (props) => {
   const { date, league, homeTeam, awayTeam, overUnderOdd, tip, score } = props;
