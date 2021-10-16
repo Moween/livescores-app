@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { apiUrl } from '../config.json';
-import httpService from '../services/httpService';
-import Table from './Table';
 import { ToastContainer } from 'react-toastify';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/styles';
 
+import Table from './Table';
+import httpService from '../services/httpService';
+import { useStyles } from '../utils/styles';
 
-const useStyles = makeStyles(theme => ({
-  container: {
-    height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-    },
-  }
-}))
 
 const Main = () => {
   const [soccerData,  setSoccerData] = useState([]);
