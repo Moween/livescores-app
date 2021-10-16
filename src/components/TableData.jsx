@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box';
 import getTime from '../utils/getTime';
 import { useStyles } from '../utils/styles';
 
-
 const TableData = (props) => {
   const {
     date,
